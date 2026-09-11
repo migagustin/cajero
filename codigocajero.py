@@ -1,7 +1,13 @@
+from cuenta import Cuenta
+
 pin_correcto = 6767
 intentos = 0
 saldo = 676767
 dinero_cajero = 999999
+
+cuenta = Cuenta("123456", saldo)
+saldoactual = cuenta.consultarSaldo()
+print(f'el saldo es de: {saldoactual}')
 
 while intentos < 3:
     pin = int(input("ingresa su pin: "))
